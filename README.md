@@ -1,3 +1,12 @@
+# 本项目FORK自杰大项目,感谢杰大!
+
+暂时只做了我个人需要修改的部分,修改内容如下:
+- 去除Deluge和autoremove-torrents 相关设置
+   - 现在使用Vertex + qBittorrent,感觉更方便. 感谢栗佬!
+
+- 修改RAW地址为个人地址,防止后续修改忘记更新
+   - 暂时除了安装qb的脚本修改外,其他暂未做修改
+
 # Seedbox Installation Script
 [中文Readme](https://github.com/jerry048/Dedicated-Seedbox/blob/main/README-zh.md)
 ### !!! These scripts are only intended to run on freshly installed Debian 10/11
