@@ -94,6 +94,13 @@ source <(wget -qO- https://raw.githubusercontent.com/PatrickStar0226/Seedbox-Com
 boot_script
 tput sgr0; clear
 
+# Close new user ssh privilege
+tput sgr0; clear
+normal_1;echo "Start Closing System New User SSH Privilege";
+usermod -L "$username"
+chsh "$username" -s /sbin/nologin
+touch /etc/nologin
+
 normal_1; echo "Seedbox Installation Complete"
 publicip=$(curl https://ipinfo.io/ip)
 [[ ! -z "$qbport" ]] && echo "qBittorrent $version is successfully installed, visit at $publicip:$qbport"
